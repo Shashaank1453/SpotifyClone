@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #faead8;
+}
+#logo img{
+    height: 50px;
+    margin: 0px 30px;
+}
+header{
+    height: 70px;width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: start;
+}
+header nav{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50px;
+    width:100%px;
+}
+a{
+    opacity: 0.8;
+    color: white;
+    padding: 5px;
+    margin: 1px;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    transition: opacity 200ms ;
+}
+a:hover{
+opacity: 0.8;
+color: #54e360;
+}
+#box{
+    height: 800px;
+    width: 1300px;
+    background: url("images/bg.jpg");
+    background-size: cover;
+    position: relative;
+    top: 25px;
+    left: 110px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+p{visibility: 
+    hidden;}
+#seekBar{
+    width: 60%;
+    position: relative;
+    top: 25%;left: 20%;
+}
+.buttons{
+    height: 20px;
+    width: 20px;
+}
+#songBox{
+    position: absolute;
+    top:10%; left:2% ;
+    height: 82%; width: 70%;
+    background-color:#faead8;
+    opacity: 0.8;
+    border-radius: 10px;
+    transition: all 1s ease-out ;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+#songBox span{
+    position: absolute;
+    height: 50px;width:50px;   
+    top: 45%;right: 0;
+    cursor: pointer;
+}
+#songBox span img{
+height: 100%;width:100%;
+}
+.songText{
+    color: white;
+    position: absolute;
+    top:25%;
+    font-family:'Times New Roman', Times, serif;
+}
+#nameBar{
+left: 25%;top: 50%;
+font-size: 1.4em;
+
+}
+#currentduration{
+    left: 17%;
+}
+#duration{
+    left: 82%;
+}
+#albumcover{
+    position: absolute;
+    height: 140px;left: 5%;
+}
+#navigationBar{
+    position: sticky;
+    bottom: 0;
+    height: 140px;width: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity:0.7;
+    transition: opacity 600ms ;
+    position: fixed;
+}
+#navigationBar:hover{ 
+    opacity:1;
+}
+#buttonbox{
+    position: absolute;
+    height: 50px;
+    width: 180px;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    top: 40%; left: 40%;
+}
+#buttonbox img{
+    height: 100%;
+    cursor: pointer;
+}
+.listItems{
+    background-color:#faead8;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    font-size: 2em;
+    font-weight:600;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    border: solid 1px #faead8;
+    transition: all 250ms ease;
+    cursor: pointer;
+}
+.listItems:hover{
+    background-color: #54e360;
+    border: solid 1px #286d2e;
+}
